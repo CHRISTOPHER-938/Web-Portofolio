@@ -67,89 +67,39 @@
     </header>
 
 <section class="section-space">
-    <h2 class="gold-text" style="text-align:center; margin-bottom:40px;">Photography Gallery</h2>
+    <h2 class="gold-text" style="text-align:center; margin-bottom:10px;">Portfolio Archives</h2>
+    <p style="text-align:center; color: var(--text-grey); margin-bottom:50px;">Pilih kategori untuk melihat karya lengkap saya di Google Drive</p>
     
-    <div class="gallery-wrapper">
-        <button class="nav-btn prev-btn" onclick="moveGallery(-1)">❮</button>
+    <div class="drive-menu-container">
+        <a href="https://drive.google.com/drive/folders/1rc-85BAoWzfchde7Ge1HCc0MNpo6xyhW?usp=drive_link" target="_blank" class="drive-card">
+            <div class="card-icon">📸</div>
+            <h3>Fotografi</h3>
+            <p>Kumpulan karya foto wedding, landscape, dan komersial.</p>
+            <span class="view-btn">Buka Folder ❯</span>
+        </a>
 
-        <div class="gallery-viewport">
-            <div class="gallery-track" id="galleryTrack">
-                <div class="gallery-card">
-                    <img src="God Help Us.jpeg" alt="Photo 1">
-                </div>
-                <div class="gallery-card">
-                    <img src="MDP_0269-2.JPG.jpeg" alt="Photo 2">
-                </div>
-                <div class="gallery-card">
-                    <img src="DSC01160.JPG" alt="Photo 3">
-                </div>
-                <div class="gallery-card">
-                    <img src="MDP_0478.JPG" alt="Photo 4">
-                </div>
-                <div class="gallery-card">
-                    <img src="DKV03270.JPG" alt="Photo 5">
-                </div>
-                <div class="gallery-card">
-                    <img src="DKV00202.JPG" alt="Photo 6">
-                </div>
-                <div class="gallery-card">
-                    <img src="UKK09865.JPG" alt="Photo 7">
-                </div>
-            </div>
-        </div>
+        <a href="https://drive.google.com/drive/folders/1fMDvf8DxlsXD2JuEzRyZ_tml38NBNpZM?usp=sharing" target="_blank" class="drive-card">
+            <div class="card-icon">🎥</div>
+            <h3>Videografi</h3>
+            <p>Dokumentasi event, cinematic video, dan motion graphic.</p>
+            <span class="view-btn">Buka Folder ❯</span>
+        </a>
 
-        <button class="nav-btn next-btn" onclick="moveGallery(1)">❯</button>
+        <a href="https://drive.google.com/drive/folders/1QBbfvluEb_vf_B4BC8eRFGA8jBbJeCiV?usp=sharing" target="_blank" class="drive-card">
+            <div class="card-icon">🎨</div>
+            <h3>Desain Grafis</h3>
+            <p>Brand identity, desain sosial media, dan layouting.</p>
+            <span class="view-btn">Buka Folder ❯</span>
+        </a>
     </div>
 </section>
 
-<section class="section-space">
-    <h2 class="gold-text" style="text-align:center; margin-bottom: 40px;">Videography Gallery</h2>
-    
-    <div class="slider-wrapper">
-        <button class="nav-side-btn" onclick="changeVideo(-1)">❮</button>
-
-        <div class="video-slider-container">
-            <div class="video-box active">
-                <video class="vertical-video" controls playsinline preload="metadata">
-                    <source src="Mr Eko Training.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="video-box">
-                <video class="vertical-video" controls playsinline preload="metadata">
-                    <source src="Portofolio Wedding Ambhara.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-
-        <button class="nav-side-btn" onclick="changeVideo(1)">❯</button>
+<div class="marquee-container">
+    <div class="marquee-content">
+        <span>FOTOGRAFI • VIDEOGRAFI • DESAIN GRAFIS • </span>
+        <span>FOTOGRAFI • VIDEOGRAFI • DESAIN GRAFIS • </span>
+        <span>FOTOGRAFI • VIDEOGRAFI • DESAIN GRAFIS • </span>
+        <span>FOTOGRAFI • VIDEOGRAFI • DESAIN GRAFIS • </span>
     </div>
-</section>
-
-    <section class="section-space">
-        <h2 class="gold-text" style="text-align:center; margin-bottom:40px;">Graphic Design Gallery</h2>
-        <div class="design-grid">
-            <div class="design-card">
-                <img src="GQ.jpg">
-                <h3 style="margin-top:10px;">Magazine Cover</h3>
-            </div>
-            <div class="design-card">
-                <img src="Promo jajanan 2.jpg">
-                <h3 style="margin-top:10px;">Food Promotion Design</h3>
-            </div>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
-    <script>
-        let currentVideo = 0;
-        const videos = document.querySelectorAll('.video-box');
-        
-        function changeVideo(n) {
-            videos[currentVideo].classList.remove('active');
-            currentVideo = (currentVideo + n + videos.length) % videos.length;
-            videos[currentVideo].classList.add('active');
-        }
-    </script> 
-    
-</body>
-</html>
+</div>
+</footer>
